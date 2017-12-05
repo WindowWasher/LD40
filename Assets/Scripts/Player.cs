@@ -89,6 +89,7 @@ public class Player : Actor {
             health += 1;
             maxHealth += 1;
             nextHealthBonus += valueNeededForHealthBonus;
+            valueNeededForHealthBonus += 5;
             updateGui();
         }
 
@@ -96,6 +97,7 @@ public class Player : Actor {
         {
             attackBonus += 1;
             nextAttachBonus += valueNeededForAttachBonus;
+            valueNeededForAttachBonus += 15;
             updateGui();
         }
     }
